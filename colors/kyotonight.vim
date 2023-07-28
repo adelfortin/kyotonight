@@ -149,9 +149,9 @@ if has('nvim')
   let g:terminal_color_1 = g:kyotonight#red[0]
   let g:terminal_color_2 = g:kyotonight#green[0]
   let g:terminal_color_3 = g:kyotonight#yellow[0]
-  let g:terminal_color_4 = g:kyotonight#blue0[0]
+  let g:terminal_color_4 = g:kyotonight#blue00[0]
   let g:terminal_color_5 = g:kyotonight#magenta[0]
-  let g:terminal_color_6 = g:kyotonight#blue1[0]
+  let g:terminal_color_6 = g:kyotonight#blue01[0]
   let g:terminal_color_7 = g:kyotonight#cream[0]
   let g:terminal_color_8 = g:kyotonight#grey0[0]
   let g:terminal_color_9 = g:kyotonight#red[0]
@@ -171,15 +171,15 @@ if has('nvim')
   "+- Neovim Diagnostics API -+
   call s:hi("DiagnosticWarn", g:kyotonight#yellow, "", "", "")
   call s:hi("DiagnosticError", g:kyotonight#red, "", "", "")
-  call s:hi("DiagnosticInfo", g:kyotonight#blue1, "", "", "")
+  call s:hi("DiagnosticInfo", g:kyotonight#blue01, "", "", "")
   call s:hi("DiagnosticHint", g:kyotonight#cyan1, "", "", "")
   call s:hi("DiagnosticSignWarn", g:kyotonight#yellow, "", "", "")
   call s:hi("DiagnosticSignError", g:kyotonight#red, "", "", "")
-  call s:hi("DiagnosticSignInfo", g:kyotonight#blue1, "", "", "")
+  call s:hi("DiagnosticSignInfo", g:kyotonight#blue01, "", "", "")
   call s:hi("DiagnosticSignHint", g:kyotonight#cyan1, "", "", "")
   call s:hi("DiagnosticUnderlineWarn", g:kyotonight#yellow, "", "undercurl", "")
   call s:hi("DiagnosticUnderlineError", g:kyotonight#red, "", "undercurl", "")
-  call s:hi("DiagnosticUnderlineInfo", g:kyotonight#blue1, "", "undercurl", "")
+  call s:hi("DiagnosticUnderlineInfo", g:kyotonight#blue01, "", "undercurl", "")
   call s:hi("DiagnosticUnderlineHint", g:kyotonight#cyan1, "", "undercurl", "")
 
   "+- Neovim DocumentHighlight -+
@@ -203,31 +203,31 @@ call s:hi("FoldColumn", g:kyotonight#grey0, g:kyotonight#bg, "", "")
 call s:hi("SignColumn", g:kyotonight#bg, g:kyotonight#bg, "", "")
 
 "+--- Navigation ---+
-call s:hi("Directory", g:kyotonight#blue0, "", "", "")
+call s:hi("Directory", g:kyotonight#blue00, "", "", "")
 
 "+--- Prompt/Status ---+
 call s:hi("EndOfBuffer", g:kyotonight#bg, "", "", "")
 call s:hi("ErrorMsg", g:kyotonight#bg, g:kyotonight#red, "", "")
 call s:hi("ModeMsg", g:kyotonight#fg, "", "", "")
-call s:hi("MoreMsg", g:kyotonight#blue0, "", "", "")
+call s:hi("MoreMsg", g:kyotonight#blue00, "", "", "")
 call s:hi("Question", g:kyotonight#fg, "", "", "")
 if g:kyotonight_uniform_status_lines == 0
-  call s:hi("StatusLine", g:kyotonight#blue0, g:kyotonight#grey0, "NONE", "")
+  call s:hi("StatusLine", g:kyotonight#blue00, g:kyotonight#grey0, "NONE", "")
   call s:hi("StatusLineNC", g:kyotonight#fg, g:kyotonight#bg, "NONE", "")
-  call s:hi("StatusLineTerm", g:kyotonight#blue0, g:kyotonight#grey0, "NONE", "")
+  call s:hi("StatusLineTerm", g:kyotonight#blue00, g:kyotonight#grey0, "NONE", "")
   call s:hi("StatusLineTermNC", g:kyotonight#fg, g:kyotonight#bg, "NONE", "")
 else
-  call s:hi("StatusLine", g:kyotonight#blue0, g:kyotonight#grey0, "NONE", "")
+  call s:hi("StatusLine", g:kyotonight#blue00, g:kyotonight#grey0, "NONE", "")
   call s:hi("StatusLineNC", g:kyotonight#fg, g:kyotonight#grey0, "NONE", "")
-  call s:hi("StatusLineTerm", g:kyotonight#blue0, g:kyotonight#grey0, "NONE", "")
+  call s:hi("StatusLineTerm", g:kyotonight#blue00, g:kyotonight#grey0, "NONE", "")
   call s:hi("StatusLineTermNC", g:kyotonight#fg, g:kyotonight#grey0, "NONE", "")
 endif
 call s:hi("WarningMsg", g:kyotonight#bg, g:kyotonight#yellow, "", "")
-call s:hi("WildMenu", g:kyotonight#blue0, g:kyotonight#bg, "", "")
+call s:hi("WildMenu", g:kyotonight#blue00, g:kyotonight#bg, "", "")
 
 "+--- Search ---+
-call s:hi("IncSearch", g:kyotonight#cyan1, g:kyotonight#blue0, s:underline, "")
-call s:hi("Search", g:kyotonight#black1, g:kyotonight#blue0, "NONE", "")
+call s:hi("IncSearch", g:kyotonight#cyan1, g:kyotonight#blue00, s:underline, "")
+call s:hi("Search", g:kyotonight#black1, g:kyotonight#blue00, "NONE", "")
 
 "+--- Tabs ---+
 call s:hi("TabLine", g:kyotonight#fg, g:kyotonight#bg, "NONE", "")
@@ -249,25 +249,25 @@ call s:hi("Conceal", g:kyotonight#grey1, g:kyotonight#black1, s:italic, "")
 call s:hi("Conditional", g:kyotonight#magenta, "", "", "")
 call s:hi("Constant", g:kyotonight#cream, "", s:italic, "")
 call s:hi("Decorator", g:kyotonight#orange, "", "", "")
-call s:hi("Define", g:kyotonight#blue0, "", "", "")
-call s:hi("Delimiter", g:kyotonight#blue0, "", "", "")
+call s:hi("Define", g:kyotonight#blue00, "", "", "")
+call s:hi("Delimiter", g:kyotonight#blue00, "", "", "")
 call s:hi("Exception", g:kyotonight#magenta, "", "", "") 
 call s:hi("Float", g:kyotonight#orange, "", "", "")
-call s:hi("Function", g:kyotonight#blue1, "", "", "")
-call s:hi("Identifier", g:kyotonight#blue0, "", s:italic, "")
+call s:hi("Function", g:kyotonight#blue01, "", "", "")
+call s:hi("Identifier", g:kyotonight#blue00, "", s:italic, "")
 call s:hi("Variable", g:kyotonight#fg, "", "", "")
-call s:hi("Include", g:kyotonight#blue1, "", "", "") 
-call s:hi("Keyword", g:kyotonight#blue0, "", "", "")
-call s:hi("Label", g:kyotonight#blue0, "", "", "")
+call s:hi("Include", g:kyotonight#blue01, "", "", "") 
+call s:hi("Keyword", g:kyotonight#blue00, "", "", "")
+call s:hi("Label", g:kyotonight#blue00, "", "", "")
 call s:hi("Number", g:kyotonight#orange, "", "", "")
 call s:hi("Operator", g:kyotonight#magenta, "", "NONE", "")
-call s:hi("PreProc", g:kyotonight#blue0, "", "NONE", "")
+call s:hi("PreProc", g:kyotonight#blue00, "", "NONE", "")
 call s:hi("Repeat", g:kyotonight#magenta, "", "", "")
-call s:hi("Special", g:kyotonight#blue0, "", "", "")
+call s:hi("Special", g:kyotonight#blue00, "", "", "")
 call s:hi("SpecialChar", g:kyotonight#yellow, "", "", "")
-call s:hi("SpecialComment", g:kyotonight#blue1, "", s:italicize_comments, "")
-call s:hi("Statement", g:kyotonight#blue0, "", "", "")
-call s:hi("StorageClass", g:kyotonight#blue0, "", "", "")
+call s:hi("SpecialComment", g:kyotonight#blue01, "", s:italicize_comments, "")
+call s:hi("Statement", g:kyotonight#blue00, "", "", "")
+call s:hi("StorageClass", g:kyotonight#blue00, "", "", "")
 call s:hi("String", g:kyotonight#green, "", "", "")
 call s:hi("Structure", g:kyotonight#magenta, "", "", "") 
 call s:hi("Tag", g:kyotonight#fg, "", "", "")
@@ -285,11 +285,11 @@ hi! link Ignore Comment
 call s:hi("asciidocAttributeEntry", g:kyotonight#cyan0, "", "", "")
 call s:hi("asciidocAttributeList", g:kyotonight#cyan0, "", "", "")
 call s:hi("asciidocAttributeRef", g:kyotonight#cyan0, "", "", "")
-call s:hi("asciidocHLabel", g:kyotonight#blue0, "", "", "")
+call s:hi("asciidocHLabel", g:kyotonight#blue00, "", "", "")
 call s:hi("asciidocListingBlock", g:kyotonight#teal, "", "", "")
-call s:hi("asciidocMacroAttributes", g:kyotonight#blue1, "", "", "")
-call s:hi("asciidocOneLineTitle", g:kyotonight#blue1, "", "", "")
-call s:hi("asciidocPassthroughBlock", g:kyotonight#blue0, "", "", "")
+call s:hi("asciidocMacroAttributes", g:kyotonight#blue01, "", "", "")
+call s:hi("asciidocOneLineTitle", g:kyotonight#blue01, "", "", "")
+call s:hi("asciidocPassthroughBlock", g:kyotonight#blue00, "", "", "")
 call s:hi("asciidocQuotedMonospaced", g:kyotonight#teal, "", "", "")
 call s:hi("asciidocTriplePlusPassthrough", g:kyotonight#teal, "", "", "")
 hi! link asciidocAdmonition Keyword
@@ -304,7 +304,7 @@ hi! link asciidocQuotedUnconstrainedEmphasized asciidocQuotedEmphasized
 hi! link asciidocURL markdownLinkText
 
 call s:hi("awkCharClass", g:kyotonight#teal, "", "", "")
-call s:hi("awkPatterns", g:kyotonight#blue0, "", s:bold, "")
+call s:hi("awkPatterns", g:kyotonight#blue00, "", s:bold, "")
 hi! link awkArrayElement Identifier
 hi! link awkBoolLogic Keyword
 hi! link awkBrktRegExp SpecialChar
@@ -344,7 +344,7 @@ hi! link cssPseudoClass cssDefinition
 hi! link cssPseudoClassId cssPseudoClass
 hi! link cssVendor Keyword
 
-call s:hi("dosiniHeader", g:kyotonight#blue1, "", "", "")
+call s:hi("dosiniHeader", g:kyotonight#blue01, "", "", "")
 hi! link dosiniLabel Type
 
 call s:hi("dtBooleanKey", g:kyotonight#teal, "", "", "")
@@ -365,7 +365,7 @@ else
   call s:hi("DiffAdd", g:kyotonight#green, g:kyotonight#bg, "", "")
   call s:hi("DiffChange", g:kyotonight#orange, g:kyotonight#bg, "", "")
   call s:hi("DiffDelete", g:kyotonight#red, g:kyotonight#bg, "", "")
-  call s:hi("DiffText", g:kyotonight#blue0, g:kyotonight#bg, "", "")
+  call s:hi("DiffText", g:kyotonight#blue00, g:kyotonight#bg, "", "")
 endif
 " Legacy groups for official git.vim and diff.vim syntax
 hi! link diffAdded DiffAdd
@@ -378,7 +378,7 @@ call s:hi("goBuiltins", g:kyotonight#teal, "", "", "")
 hi! link goConstants Keyword
 
 call s:hi("helpBar", g:kyotonight#grey0, "", "", "")
-call s:hi("helpHyperTextJump", g:kyotonight#blue1, "", s:underline, "")
+call s:hi("helpHyperTextJump", g:kyotonight#blue01, "", s:underline, "")
 
 call s:hi("htmlArg", g:kyotonight#teal, "", "", "")
 call s:hi("htmlLink", g:kyotonight#fg, "", "NONE", "NONE")
@@ -424,7 +424,7 @@ call s:hi("markdownFootnote", g:kyotonight#teal, "", "", "")
 call s:hi("markdownId", g:kyotonight#teal, "", "", "")
 call s:hi("markdownIdDeclaration", g:kyotonight#teal, "", "", "")
 call s:hi("markdownH1", g:kyotonight#blue1, "", "", "")
-call s:hi("markdownLinkText", g:kyotonight#blue1, "", "", "")
+call s:hi("markdownLinkText", g:kyotonight#blue01, "", "", "")
 call s:hi("markdownUrl", g:kyotonight#fg, "", "NONE", "")
 hi! link markdownBold Bold
 hi! link markdownBoldDelimiter Keyword
@@ -471,7 +471,7 @@ call s:hi("rustAttribute", g:kyotonight#cyan0, "", "", "")
 call s:hi("rustEnum", g:kyotonight#teal, "", s:bold, "")
 call s:hi("rustMacro", g:kyotonight#blue1, "", s:bold, "")
 call s:hi("rustModPath", g:kyotonight#teal, "", "", "")
-call s:hi("rustPanic", g:kyotonight#blue0, "", s:bold, "")
+call s:hi("rustPanic", g:kyotonight#blue00, "", s:bold, "")
 call s:hi("rustTrait", g:kyotonight#teal, "", s:italic, "")
 hi! link rustCommentLineDoc Comment
 hi! link rustDerive rustAttribute
@@ -540,14 +540,14 @@ call s:hi("ALEError", g:kyotonight#red, "", "undercurl", "")
 " > neoclide/coc.nvim
 call s:hi("CocWarningHighlight", g:kyotonight#yellow, "", "undercurl", "")
 call s:hi("CocErrorHighlight", g:kyotonight#red, "", "undercurl", "")
-call s:hi("CocInfoHighlight", g:kyotonight#blue1, "", "undercurl", "")
+call s:hi("CocInfoHighlight", g:kyotonight#blue01, "", "undercurl", "")
 call s:hi("CocHintHighlight", g:kyotonight#cyan1, "", "undercurl", "")
 call s:hi("CocWarningSign", g:kyotonight#yellow, "", "", "")
 call s:hi("CocErrorSign", g:kyotonight#red, "", "", "")
-call s:hi("CocInfoSign", g:kyotonight#blue1, "", "", "")
+call s:hi("CocInfoSign", g:kyotonight#blue01, "", "", "")
 call s:hi("CocHintSign", g:kyotonight#cyan1, "", "", "")
-call s:hi("CocSearch", g:kyotonight#blue1, "", "", "")
-call s:hi("CocNotificationProgress", g:kyotonight#blue1, "", "", "")
+call s:hi("CocSearch", g:kyotonight#blue01, "", "", "")
+call s:hi("CocNotificationProgress", g:kyotonight#blue01, "", "", "")
 
 if has('nvim')
   " Neovim LSP
@@ -560,7 +560,7 @@ if has('nvim')
     call s:hi("LspDiagnosticsDefaultHint", g:kyotonight#cyan1, "", "", "")
     call s:hi("LspDiagnosticsUnderlineWarning", g:kyotonight#yellow, "", "undercurl", "")
     call s:hi("LspDiagnosticsUnderlineError", g:kyotonight#red, "", "undercurl", "")
-    call s:hi("LspDiagnosticsUnderlineInformation", g:kyotonight#blue1, "", "undercurl", "")
+    call s:hi("LspDiagnosticsUnderlineInformation", g:kyotonight#blue01, "", "undercurl", "")
     call s:hi("LspDiagnosticsUnderlineHint", g:kyotonight#cyan1, "", "undercurl", "")
   endif
   
@@ -613,13 +613,13 @@ hi! link CtrlPBufferHid Normal
 call s:hi("ClapDir", g:kyotonight#fg, "", "", "")
 call s:hi("ClapDisplay", g:kyotonight#fg, g:kyotonight#bg, "", "")
 call s:hi("ClapFile", g:kyotonight#fg, "", "", "")
-call s:hi("ClapMatches", g:kyotonight#blue1, "", "", "")
+call s:hi("ClapMatches", g:kyotonight#blue01, "", "", "")
 call s:hi("ClapNoMatchesFound", g:kyotonight#yellow, "", "", "")
 call s:hi("ClapSelected", g:kyotonight#teal, "", s:bold, "")
-call s:hi("ClapSelectedSign", g:kyotonight#blue0, "", "", "")
+call s:hi("ClapSelectedSign", g:kyotonight#blue00, "", "", "")
 let s:clap_matches = [
-        \ [g:kyotonight#blue1[0], g:kyotonight#blue1[1]] ,
-        \ [g:kyotonight#blue0[0], g:kyotonight#blue0[1]] ,
+        \ [g:kyotonight#blue1[0], g:kyotonight#blue01[1]] ,
+        \ [g:kyotonight#blue0[0], g:kyotonight#blue00[1]] ,
         \ [g:kyotonight#cyan0[0], g:kyotonight#cyan0[1]] ,
         \ ]
 for s:clap_match_i in range(1,12)
@@ -647,22 +647,22 @@ call s:hi("plugDeleted", g:kyotonight#red, "", "", "")
 
 " vim-signature
 " > kshenoy/vim-signature
-call s:hi("SignatureMarkText", g:kyotonight#blue1, "", "", "")
+call s:hi("SignatureMarkText", g:kyotonight#blue01, "", "", "")
 
 " vim-startify
 " > mhinz/vim-startify
 call s:hi("StartifyFile", g:kyotonight#cyan1, "", "", "")
 call s:hi("StartifyFooter", g:kyotonight#yellow, "", s:italic, "")
-call s:hi("StartifyHeader", g:kyotonight#blue0, "", "", "")
+call s:hi("StartifyHeader", g:kyotonight#blue00, "", "", "")
 call s:hi("StartifyNumber", g:kyotonight#magenta, "", "", "")
-call s:hi("StartifyPath", g:kyotonight#blue0, "", "", "")
+call s:hi("StartifyPath", g:kyotonight#blue00, "", "", "")
 hi! link StartifyBracket Delimiter
 hi! link StartifySlash Normal
 hi! link StartifySpecial Comment
 
 " dashboard-nvim
 " > glepnir/dashboard-nvim
-call s:hi("DashboardHeader", g:kyotonight#blue0, "", "", "")
+call s:hi("DashboardHeader", g:kyotonight#blue00, "", "", "")
 call s:hi("DashboardCenter", g:kyotonight#magenta, "", "", "")
 call s:hi("DashboardFooter", g:kyotonight#yellow, "", s:italic, "")
 call s:hi("DashboardShortCut", g:kyotonight#teal, "", "", "")
@@ -752,7 +752,7 @@ endif
 
 " TypeScript
 " > HerringtonDarkholme/yats.vim
-call s:hi("typescriptBOMWindowMethod", g:kyotonight#blue1, "", s:italic, "")
+call s:hi("typescriptBOMWindowMethod", g:kyotonight#blue01, "", s:italic, "")
 call s:hi("typescriptClassName", g:kyotonight#teal, "", "", "")
 call s:hi("typescriptDecorator", g:kyotonight#orange, "", "", "")
 call s:hi("typescriptInterfaceName", g:kyotonight#teal, "", s:bold, "")
@@ -794,9 +794,9 @@ hi! link tsxTagName tsxIntrinsicTagName
 " Markdown
 " > plasticboy/vim-markdown
 call s:hi("mkdCode", g:kyotonight#teal, "", "", "")
-call s:hi("mkdFootnote", g:kyotonight#blue1, "", "", "")
+call s:hi("mkdFootnote", g:kyotonight#blue01, "", "", "")
 call s:hi("mkdRule", g:kyotonight#cyan0, "", "", "")
-call s:hi("mkdLineBreak", g:kyotonight#blue0, "", "", "")
+call s:hi("mkdLineBreak", g:kyotonight#blue00, "", "", "")
 hi! link mkdBold Bold
 hi! link mkdItalic Italic
 hi! link mkdString Keyword
@@ -828,11 +828,11 @@ hi! link phpUseClass phpClass
 " > vimwiki/vimwiki
 if !exists("g:vimwiki_hl_headers") || g:vimwiki_hl_headers == 0
   for s:i in range(1,6)
-    call s:hi("VimwikiHeader".s:i, g:kyotonight#blue1, "", s:bold, "")
+    call s:hi("VimwikiHeader".s:i, g:kyotonight#blue01, "", s:bold, "")
   endfor
 else
-  let s:vimwiki_hcolorfg = [g:kyotonight#teal[0], g:kyotonight#blue1[0], g:kyotonight#blue0[0], g:kyotonight#cyan0[0], g:kyotonight#green[0], g:kyotonight#magenta[0]]
-  let s:vimwiki_hcolor_ctermfg = [g:kyotonight#teal[1], g:kyotonight#blue1[1], g:kyotonight#blue0[1], g:kyotonight#cyan0[1], g:kyotonight#green[1], g:kyotonight#magenta[1]]
+  let s:vimwiki_hcolorfg = [g:kyotonight#teal[0], g:kyotonight#blue01[0], g:kyotonight#blue00[0], g:kyotonight#cyan0[0], g:kyotonight#green[0], g:kyotonight#magenta[0]]
+  let s:vimwiki_hcolor_ctermfg = [g:kyotonight#teal[1], g:kyotonight#blue01[1], g:kyotonight#blue00[1], g:kyotonight#cyan0[1], g:kyotonight#green[1], g:kyotonight#magenta[1]]
   for s:i in range(1,6)
     call s:hi("VimwikiHeader".s:i, [s:vimwiki_hcolorfg[s:i-1] , ""], [s:vimwiki_hcolor_ctermfg[s:i-1], ""], s:bold, "")
   endfor
@@ -861,8 +861,8 @@ function! KyotoNightPalette() abort
                 \ "cream",
                 \ "cyan1",
                 \ "teal",
-                \ "blue1",
-                \ "blue0",
+                \ "blue01",
+                \ "blue00",
                 \ "cyan0",
                 \ "red",
                 \ "orange",
