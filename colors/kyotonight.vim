@@ -188,7 +188,7 @@ if has('nvim')
   call s:hi("LspReferenceWrite", "", g:kyotonight#grey0, "", "")
 
   "+- Neovim LspSignatureHelp -+
-  call s:hi("LspSignatureActiveParameter", g:kyotonight#blue0, "", s:underline, "")
+  call s:hi("LspSignatureActiveParameter", g:kyotonight#blue00, "", s:underline, "")
 endif
 
 "+--- Gutter ---+
