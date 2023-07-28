@@ -3,7 +3,7 @@ local c = require('kyotonight.colors')
 local kyotonight = {}
 
 kyotonight.normal = {
-        a = {fg = c.blue3, bg = c.blue1, gui = "bold"},
+        a = {fg = c.blue3[0], bg = c.blue1, gui = "bold"},
         b = {fg = c.blue3, bg = c.blue2},
         c = {fg = c.blue1, bg = c.blue3},
         x = {fg = c.blue1, bg = c.blue3},
