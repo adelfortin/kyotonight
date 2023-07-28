@@ -618,8 +618,8 @@ call s:hi("ClapNoMatchesFound", g:kyotonight#yellow, "", "", "")
 call s:hi("ClapSelected", g:kyotonight#teal, "", s:bold, "")
 call s:hi("ClapSelectedSign", g:kyotonight#blue00, "", "", "")
 let s:clap_matches = [
-        \ [g:kyotonight#blue1[0], g:kyotonight#blue01[1]] ,
-        \ [g:kyotonight#blue0[0], g:kyotonight#blue00[1]] ,
+        \ [g:kyotonight#blue01[0], g:kyotonight#blue01[1]] ,
+        \ [g:kyotonight#blue00[0], g:kyotonight#blue00[1]] ,
         \ [g:kyotonight#cyan0[0], g:kyotonight#cyan0[1]] ,
         \ ]
 for s:clap_match_i in range(1,12)
