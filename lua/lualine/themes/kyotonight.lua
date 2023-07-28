@@ -3,12 +3,12 @@ local c = require('kyotonight.colors')
 local kyotonight = {}
 
 kyotonight.normal = {
-        a = {fg = c.blue3[0], bg = c.blue1, gui = "bold"},
-        b = {fg = c.blue3, bg = c.blue2},
-        c = {fg = c.blue1, bg = c.blue3},
-        x = {fg = c.blue1, bg = c.blue3},
-        y = {fg = c.blue3, bg = c.blue2, gui = "bold"},
-        z = {fg = c.blue3, bg = c.blue1, gui = "bold"}
+        a = {fg = c.blue3[0], bg = c.blue1[0], gui = "bold"},
+        b = {fg = c.blue3[0], bg = c.blue2[0]},
+        c = {fg = c.blue1[0], bg = c.blue3[0]},
+        x = {fg = c.blue1[0], bg = c.blue3[0]},
+        y = {fg = c.blue3[0], bg = c.blue2[0], gui = "bold"},
+        z = {fg = c.blue3[0], bg = c.blue1[0], gui = "bold"}
 }
 
 kyotonight.insert = {
