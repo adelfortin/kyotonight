@@ -1,4 +1,4 @@
-local colors = require('kyotonight.colors')
+local c = require('kyotonight.colors')
 
 local kyotonight = {}
 
