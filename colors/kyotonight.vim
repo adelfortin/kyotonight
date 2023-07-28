@@ -157,7 +157,7 @@ if has('nvim')
   let g:terminal_color_9 = g:kyotonight#red[0]
   let g:terminal_color_10 = g:kyotonight#green[0]
   let g:terminal_color_11 = g:kyotonight#yellow[0]
-  let g:terminal_color_12 = g:kyotonight#blue0[0]
+  let g:terminal_color_12 = g:kyotonight#blue00[0]
   let g:terminal_color_13 = g:kyotonight#magenta[0]
   let g:terminal_color_14 = g:kyotonight#teal[0]
   let g:terminal_color_15 = g:kyotonight#cyan1[0]
